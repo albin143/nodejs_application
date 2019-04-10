@@ -33,7 +33,7 @@ hndle.get('/gallery',(req,res)=>{
     res.render("gallery")
 })
 
-hndle.listen(3700,()=>{
+hndle.listen(process.env.port||3700,()=>{
     console.log("web running ")
    
 });
